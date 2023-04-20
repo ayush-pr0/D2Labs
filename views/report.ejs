@@ -1,0 +1,244 @@
+<%- include("header") -%>
+
+<body>
+    <!-- Spinner Start -->
+    <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+        <div
+            class="spinner-grow text-primary"
+            style="width: 3rem; height: 3rem"
+            role="status"
+        >
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-xxl position-relative p-0">
+        <nav
+            class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+        >
+            <a href="/" class="navbar-brand p-0">
+                <h1 class="m-0">
+                    <img src="logo/logo2.svg" alt="LOGO" class="imgchng" />
+                </h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="/" class="nav-item nav-link">Home</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-xxl py-5 mb-5">
+            <div class="container my-5 py-5 px-lg-5">
+                <div
+                    style="
+                        max-width: 800px;
+                        margin: 0 auto;
+                        padding: 20px;
+                        box-sizing: border-box;
+                        background-color: #fff;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                        border-radius: 5px;
+                    "
+                >
+                    <h1 style="text-align: center; margin: 20px 0">
+                        Diagnostic Report
+                    </h1>
+                    <hr />
+
+                    <h2 style="margin: 20px 0 10px; font-size: 22px">
+                        Doctor Information
+                    </h2>
+                    <hr />
+                    <table
+                        style="
+                            margin: 0 auto;
+                            font-size: 18px;
+                            color: rgb(78, 78, 78);
+                            padding: 10px;
+                            border: 1px solid black;
+                        "
+                    >
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <strong>Name:</strong>
+                            </td>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <%= doctor_name %>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <strong>Phone:</strong>
+                            </td>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <%= doctor_phone %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <strong>Email:</strong>
+                            </td>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <%= doctor_email %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <strong>Address:</strong>
+                            </td>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <%= doctor_address %>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2 style="margin: 20px 0 10px; font-size: 22px">
+                        Patient Information
+                    </h2>
+                    <hr />
+                    <table
+                        style="
+                            margin: 0 auto;
+                            font-size: 18px;
+                            color: rgb(78, 78, 78);
+                            padding: 10px;
+                            border: 1px solid black;
+                        "
+                    >
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <strong>Name:</strong>
+                            </td>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <%= patient_name %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <strong>Date of Birth:</strong>
+                            </td>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <%= patient_dob %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <strong>Phone:</strong>
+                            </td>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <%= patient_phone %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <strong>Email:</strong>
+                            </td>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <%= patient_email %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <strong>Address:</strong>
+                            </td>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <%= patient_address %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <strong>Gender:</strong>
+                            </td>
+                            <td style="padding: 10px; border: 1px solid black">
+                                <%= gender %>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br />
+                    <p
+                        style="
+                            margin: 10px 0;
+                            font-size: 18px;
+                            color: rgb(0, 0, 0);
+                        "
+                    >
+                        <strong>Result:</strong> <%=result%>
+                    </p>
+                    <hr />
+                    <h2 style="margin: 20px 0 10px; font-size: 22px">
+                        Radiology Images
+                    </h2>
+                    <div
+                        style="
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                        "
+                    >
+                        <img
+                            style="
+                                max-width: 50%;
+                                margin: 30px 0;
+                                border-radius: 5px;
+                                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                            "
+                            width="400"
+                            height="400"
+                            src="<%=path%>"
+                            alt="Image 1"
+                        />
+                        <img
+                            style="
+                                max-width: 50%;
+                                margin: 30px 0;
+                                border-radius: 5px;
+                                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                            "
+                            width="400"
+                            height="400"
+                            src="<%=result_path%>"
+                            alt="Image 2"
+                        />
+                    </div>
+                    <hr />
+
+                    <p>
+                        <strong
+                            >Once your report is ready, you will receive an
+                            email notification with a link to download the full
+                            report.</strong
+                        >
+                        No need to wait for physical copies or appointments -
+                        you can access your complete medical report instantly
+                        from the comfort of your own home.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+
+<%- include("footer") -%>

@@ -1,0 +1,8 @@
+*node_modules/*
+model/*
+Images/*
+public/result*
+public/upload*
+public/html*
+public/pdf*
+.env
