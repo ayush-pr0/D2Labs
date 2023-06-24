@@ -3,6 +3,7 @@
 ![index](https://github.com/Aayush481181/Visual-disease-detection/blob/master/img/index.png?raw=true)
 ![labs](https://github.com/Aayush481181/Visual-disease-detection/blob/master/img/labs.png?raw=true)
 
+[![IMAGE ALT TEXT HERE](https://tuberanker.com/storage/images/data/can-i-use-someone-elses-video-on-my-youtube-channel.png)](https://youtu.be/onVwxhpYP3Q)
 D2 LABS is a visual disease detection project that uses advanced machine learning algorithms to detect and diagnose various medical conditions using medical imaging. The project consists of three main models, namely Covid19 and pneumonia, Brain Tumor, and "Breast Cancer.
 
 Doctor can upload medical images, and the models use deep learning techniques to analyze the images and identify any anomalies or indicators of disease. The results are then displayed using a heatmap image that highlights the areas of concern. Additionally, patients receive a digital PDF report that outlines the findings and recommendations for further medical attention.
